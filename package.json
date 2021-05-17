@@ -1,7 +1,7 @@
 {
   "name": "cra-template-dca",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "author": "Daniel Cherino",
   "license": "MIT",
   "engines": {
@@ -37,6 +37,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "styled-components": "^5.3.0",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
