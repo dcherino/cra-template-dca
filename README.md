@@ -1,46 +1,47 @@
-# Getting Started with Create React App
+# A quick start TypeScript Create React App template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An opinionated quick start [Create React App](https://github.com/facebook/create-react-app) (CRA) _template_ with configured **TypeScript**, **Styled Components**, **Husky**, **Lint Staged** and custom **ESlint** & **Prettier** configuration.
+
+Original Create React App README available [here](./README_CRA.md)
+
+## Usage
+
+```bash
+npx create-react-app your-project-name --template dca
+```
+
+Or
+
+```bash
+yarn create react-app your-project-name --template dca
+```
+
+`npx` command installs the most recent stable version of CRA from npm.
+
+`--template` parameter points to this template, note that `cra-template-` prefix is omitted.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
+- `yarn start` - runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- `yarn test` - launches the test runner in the interactive watch mode.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- `yarn build` - builds the app for production to the `build` folder.
 
-### `yarn test`
+- `yarn eject` - exposes content of `react-script` package
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Due to CRA template limitations (we can change only `scripts` and `dependencies` inside generated `package.json`) all configuration is done by adding config files where possible. 
 
-### `yarn build`
+## [Prettier](https://prettier.io/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`Prettier` has been added to force consistent formatting. It will highlight errors as warning only.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Styles/CSS/Styling
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Styled Components](https://styled-components.com//) is used as styling library. The template is shipped with a theme created by default. 
 
-### `yarn eject`
+## Eslint configurations
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+The template extends CRA ESLint rules with a custom set, tailored for the reasonable and clean development process.
